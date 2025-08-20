@@ -4,37 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raghav Yadav | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Scroll to top button -->
+  <button id="scrollBtn">⬆️</button>
+
+  <!-- Dark mode toggle -->
+  <button id="darkModeBtn">🌙</button>
+
   <!-- Header -->
-  <header>
+  <header class="fade-in" style="--delay: 0s;">
     <h1>Raghav Yadav</h1>
-    <p class="tagline">Aspiring DevOps Engineer</p>
+    <p class="tagline" id="tagline"></p>
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="fade-in" style="--delay: 0.2s">
     <h2>About Me</h2>
     <p>
-      Aspiring Software Engineer with strong foundation in Data Structures, Algorithms, 
-      and Problem Solving. Skilled in building real-world applications and actively practicing 
-      coding on platforms like GeeksforGeeks, LeetCode, and Codeforces. Seeking opportunities 
-      to apply my skills in software development and system design.
+      Aspiring Software Engineer with strong foundation in Data Structures, Algorithms, and Problem Solving. Skilled in building real-world applications. Seeking opportunities to apply my skills in software development and system design.
+      
     </p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><b>DevOps Tools:</b> Git, GitHub, Linux, Kubernetes, Docker</li>
-      <li><b>Programming:</b> Python, Bash, Shell Scripting</li>
-    </ul>
-  </section>
+<section id="skills" class="fade-in" style="--delay: 0.4s">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <span>Docker (50%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>Kubernetes (40%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>Linux (65%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>Git & GitHub (70%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>Python (75%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>Bash/Shell Scripting (60%)</span>
+    <div class="skill-container">
+      <div class="skill-bar"></div>
+    </div>
+  </div>
+
+</section>
+
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="fade-in" style="--delay: 0.6s">
     <h2>Projects</h2>
     <ul>
       <li>
@@ -49,7 +103,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="fade-in" style="--delay: 0.8s">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:raghav.bpt01@gmail.com">raghav.bpt01@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/raghav-yadav-530a13185" target="_blank">linkedin.com/in/raghav-yadav</a></p>
@@ -59,5 +113,9 @@
   <footer>
     <p>© 2025 Raghav Yadav</p>
   </footer>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
