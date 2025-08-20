@@ -8,9 +8,6 @@ This is my personal **portfolio website**, built using **HTML, CSS, JS** and dep
 - Projects
 - Contact
 
-## Live Demo
-👉 [Will add once deployed]
-
 ## Deployment
 The site is automatically deployed using GitHub Actions to [Netlify/AWS/Heroku].
 
